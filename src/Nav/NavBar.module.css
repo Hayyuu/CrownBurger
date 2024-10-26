@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+#menu{
+    display: grid;
+    grid-template:1fr/1fr 1fr 1fr 1fr 2fr;
+}
+nav{
+    display:grid;
+    grid-template:1fr/2fr 0 4fr;
+    align-items: center;
+    padding: 0 30px;
+   
+  }
+  .navLink{
+    color:var(--color-ternary);
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+  .navLink:hover{
+    color: black;
+    background-color: var(--color-secondary);
+    filter: drop-shadow(0 0 2em yellow);
+  
+  }
+  .navButton:hover{
+    filter: drop-shadow(0 0 2em yellow);
+    background-color: var(--color-secondary);
+    border: none;
+  }
+  
+  h1{
+    color:var(--color-ternary);
+  }
+  .logo {
+    height: 5em;
+    padding: 10px;
+    will-change: filter;
+    transition: filter 300ms;
+    background-color:yellow;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 50%;
+  }
+  
+  .logo:hover {
+    filter: drop-shadow(0 0 2em yellow);
+  }
+  
+nav a.active{
+    filter: drop-shadow(0 0 2em yellow);
+    background-color: var(--color-secondary);
+    border: none;
+}
+/* ---------------- Navbar and burger menu ------------------ */
+
+
+
+@media (max-width: 700px) {
+    nav {
+        display:grid;
+        grid-template:1fr 0 3fr/1fr;
+
+    }
+    nav #menu{
+        display:grid;
+        grid-template:1fr 1fr 1fr 1fr 1fr/1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    nav .navLink:hover{
+       padding: 10px 20px;
+    }
+
+   
+
+   
+       
+    
+}

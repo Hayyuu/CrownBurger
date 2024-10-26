@@ -1,0 +1,36 @@
+.home{
+    display: grid;
+    grid-template:1fr/0.5fr 1fr 1.5fr;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+}
+.left{
+    max-width: 500px;
+    justify-self: start;
+}
+
+.left p{
+    color: var(--color-ternary);
+}
+img{
+    
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+.button{
+    background-color: var(--color-secondary);
+    margin-top: 20px;
+}
+.button:hover{
+    filter: drop-shadow(0 0 2em yellow);
+}
+@media (max-width: 700px) {
+    .home{
+        display: grid;
+        max-height:100px ;
+        grid-template:0 1fr 1fr/1fr;
+        align-items: center;
+    }
+}
